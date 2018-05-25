@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GTTProject FileFormatRevision="104" TouchInput="False" BuzzFeedback="False" MotorFeedback="False" TouchReportMode="RegionUpDown" CommunicationChannel="I2C" ProjectName="GTTProject12" Theme="Glossy" GTTProduct="GTT35A" StartScreenIndex="0" ScreenWidth="320" ScreenHeight="240" UseLoader="False" UseGlobalBitmaps="False" xmlns="clr-namespace:GTT.Project.Common;assembly=GTT.Project.Common" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <GTTProject.GlobalRegions>
+    <RegionSlotCollection />
+  </GTTProject.GlobalRegions>
+  <GTTProject.GlobalFontSlots>
+    <FontSlotCollection />
+  </GTTProject.GlobalFontSlots>
+  <GTTProject.GlobalBitmapSlots>
+    <BitmapSlotCollection />
+  </GTTProject.GlobalBitmapSlots>
+  <GTTProject.GlobalLabelSlots>
+    <LabelSlotCollection />
+  </GTTProject.GlobalLabelSlots>
+  <GTTProject.GlobalTraceSlots>
+    <TraceSlotCollection />
+  </GTTProject.GlobalTraceSlots>
+  <GTTProject.GlobalAnimationInstances>
+    <AnimationInstanceCollection />
+  </GTTProject.GlobalAnimationInstances>
+  <GTTProject.GlobalAnimationSlots>
+    <AnimationSlotCollection />
+  </GTTProject.GlobalAnimationSlots>
+  <GTTProject.GlobalNineSliceSlots>
+    <NineSliceSlotCollection />
+  </GTTProject.GlobalNineSliceSlots>
+  <GTTProject.Screens>
+    <ScreenCollection>
+      <Screen Name="Screen1">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2.0458715596330244" GradientType="Radial" StartColor="#FFA4BFA2" EndColor="#FFA4BFA2" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_5" Theme="{assembly:Null}" Top="117" Left="25" ZOrder="0" Width="270" Height="2" />
+            <GuiAdvancedLabel PreferedLabelID="1" LabelText="%" LabelFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" LabelSize="18" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="True" CachedCharacters="" ElementName="Static_Text_2" Theme="{assembly:Null}" Top="165" Left="229" ZOrder="0" Width="60" Height="30" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiAdvancedLabel PreferedLabelID="4" LabelText="25" LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="45" LabelRotation="0" LabelHorizontalAlignment="Right" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="True" BlankLabel="True" CachedCharacters="" ElementName="TempLabel_1" Theme="{assembly:Null}" Top="40" Left="83" ZOrder="0" Width="150" Height="70" />
+            <GuiAdvancedLabel PreferedLabelID="5" LabelText="100" LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="45" LabelRotation="0" LabelHorizontalAlignment="Right" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="True" BlankLabel="True" CachedCharacters="" ElementName="HumiLabel_1" Theme="{assembly:Null}" Top="142" Left="102" ZOrder="0" Width="130" Height="70" />
+            <GuiAdvancedLabel PreferedLabelID="6" LabelText="°C " LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="18" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="True" CachedCharacters="" ElementName="Static_Text_4" Theme="{assembly:Null}" Top="34" Left="236" ZOrder="0" Width="60" Height="30" />
+            <GuiAdvancedLabel PreferedLabelID="8" LabelText="RH" LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="18" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="True" CachedCharacters="" ElementName="Static_Text_1" Theme="{assembly:Null}" Top="127" Left="234" ZOrder="0" Width="60" Height="45" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="16" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="MAX" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="MaxBtn" Theme="Flat" Top="192" Left="25" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen2" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiAdvancedLabel PreferedLabelID="19" LabelText="8" LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="24" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="True" BlankLabel="False" CachedCharacters="" ElementName="TempDecLabel_1" Theme="{assembly:Null}" Top="62" Left="231" ZOrder="0" Width="45" Height="44" />
+            <GuiImage DeviceRender="False" ImageString="Images\green thermometer.png" ImageStretch="Fill" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="27" Left="24" ZOrder="0" Width="49" Height="49" />
+            <GuiImage DeviceRender="False" ImageString="Images\blue moisture.png" ImageStretch="Fill" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_2" Theme="{assembly:Null}" Top="128" Left="26" ZOrder="0" Width="45" Height="45" />
+            <GuiBasicButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" PreferedRegionID="2" ButtonUpImageString="{assembly:Null}" ButtonDownImageString="{assembly:Null}" ButtonUpImageStretch="Uniform" ButtonDownImageStretch="Uniform" ButtonUpImageHorizontalAlignment="Center" ButtonDownImageHorizontalAlignment="Center" ButtonUpImageVerticalAlignment="Center" ButtonDownImageVerticalAlignment="Center" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" LockWidthHeight="False" ElementName="Image_Button_1" Theme="{assembly:Null}" Top="26" Left="75" ZOrder="0" Width="215" Height="89">
+              <GuiBasicButton25.OnUpAction>
+                <GTTActionList />
+              </GuiBasicButton25.OnUpAction>
+              <GuiBasicButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="LiveTGraph" />
+              </GuiBasicButton25.OnDownAction>
+              <GuiBasicButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiBasicButton25.ActionScriptUp>
+              <GuiBasicButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiBasicButton25.ActionScriptDown>
+            </GuiBasicButton25>
+            <GuiBasicButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" PreferedRegionID="3" ButtonUpImageString="{assembly:Null}" ButtonDownImageString="{assembly:Null}" ButtonUpImageStretch="Uniform" ButtonDownImageStretch="Uniform" ButtonUpImageHorizontalAlignment="Center" ButtonDownImageHorizontalAlignment="Center" ButtonUpImageVerticalAlignment="Center" ButtonDownImageVerticalAlignment="Center" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" LockWidthHeight="False" ElementName="Image_Button_2" Theme="{assembly:Null}" Top="125" Left="75" ZOrder="0" Width="215" Height="95">
+              <GuiBasicButton25.OnUpAction>
+                <GTTActionList />
+              </GuiBasicButton25.OnUpAction>
+              <GuiBasicButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="LiveHGraph" />
+              </GuiBasicButton25.OnDownAction>
+              <GuiBasicButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiBasicButton25.ActionScriptUp>
+              <GuiBasicButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiBasicButton25.ActionScriptDown>
+            </GuiBasicButton25>
+            <GuiAdvancedLabel PreferedLabelID="22" LabelText="." LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="45" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="False" CachedCharacters="" ElementName="Static_Text_3" Theme="{assembly:Null}" Top="34" Left="140" ZOrder="0" Width="150" Height="80" />
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="Screen2">
+        <Screen.OnPreLoadAction>
+          <ScriptActionEditor TextValue="Scripts\traces.txt" />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiAdvancedLabel PreferedLabelID="9" LabelText="%" LabelFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" LabelSize="18" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="True" CachedCharacters="" ElementName="Static_Text_2" Theme="{assembly:Null}" Top="62" Left="228" ZOrder="0" Width="60" Height="30" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="True" ButtonFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" PreferedRegionID="10" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text=" " ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="Images\blue moisture.png" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_2" Theme="Flat" Top="29" Left="23" ZOrder="0" Width="45" Height="45">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <GTTActionList />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiAdvancedLabel PreferedLabelID="11" LabelText=" " LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="45" LabelRotation="0" LabelHorizontalAlignment="Right" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="True" BlankLabel="True" CachedCharacters="" ElementName="HumiLabel_1" Theme="{assembly:Null}" Top="100" Left="56" ZOrder="0" Width="130" Height="70" />
+            <GuiAdvancedLabel PreferedLabelID="12" LabelText="RH" LabelFontString="Fonts\segment7\Segment7Standard.otf" LabelSize="18" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="True" CachedCharacters="" ElementName="Static_Text_1" Theme="{assembly:Null}" Top="26" Left="230" ZOrder="0" Width="60" Height="45" />
+            <GuiTriangleButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" Rotation="Up" LockWidthHeight="False" ButtonFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" PreferedRegionID="13" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" BorderSize="2" Text="+" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Triangle_Button_1" Theme="(Project Default)" Top="92" Left="193" ZOrder="0" Width="86" Height="32">
+              <GuiTriangleButton25.OnUpAction>
+                <GTTActionList />
+              </GuiTriangleButton25.OnUpAction>
+              <GuiTriangleButton25.OnDownAction>
+                <GTTActionList />
+              </GuiTriangleButton25.OnDownAction>
+              <GuiTriangleButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiTriangleButton25.ActionScriptUp>
+              <GuiTriangleButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiTriangleButton25.ActionScriptDown>
+            </GuiTriangleButton25>
+            <GuiTriangleButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" Rotation="Down" LockWidthHeight="False" ButtonFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" PreferedRegionID="14" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" BorderSize="2" Text="-" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Triangle_Button_2" Theme="(Project Default)" Top="132" Left="193" ZOrder="0" Width="86" Height="32">
+              <GuiTriangleButton25.OnUpAction>
+                <GTTActionList />
+              </GuiTriangleButton25.OnUpAction>
+              <GuiTriangleButton25.OnDownAction>
+                <GTTActionList />
+              </GuiTriangleButton25.OnDownAction>
+              <GuiTriangleButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiTriangleButton25.ActionScriptUp>
+              <GuiTriangleButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiTriangleButton25.ActionScriptDown>
+            </GuiTriangleButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="15" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="Screen3">
+        <Screen.OnPreLoadAction>
+          <ScriptActionEditor TextValue="Scripts\traces.txt" />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FFF02E2C" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="True" ButtonFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" PreferedRegionID="17" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text=" " ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="Images\blue moisture.png" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_2" Theme="Flat" Top="29" Left="23" ZOrder="0" Width="45" Height="45">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <GTTActionList />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiAdvancedLabel PreferedLabelID="18" LabelText="MAX RH% reached" LabelFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" LabelSize="15" LabelRotation="0" LabelHorizontalAlignment="Right" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="True" BlankLabel="True" CachedCharacters="" ElementName="HumiLabel_1" Theme="{assembly:Null}" Top="88" Left="34" ZOrder="0" Width="238" Height="63" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="7" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="LiveTGraph">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="71" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="72" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="73" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1WkBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="74" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\green thermometer.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="93" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="77" HorizontalAxisID="76" PreferedID="75" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="35" DataPoints="30" ElementName="TLive" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="80" GlobalDataSource="False" PlotID="79" GraphStyle="Line" PlotColor="#FFFF0000" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="TGraph_1HR">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="20" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="21" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="23" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1WkBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="24" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\green thermometer.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="93" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="32" HorizontalAxisID="31" PreferedID="28" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="35" DataPoints="180" ElementName="1HrChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="37" GlobalDataSource="True" PlotID="36" GraphStyle="Line" PlotColor="#FFFF0000" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="TGraph_24HR">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="81" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="82" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="83" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1WkBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="84" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\green thermometer.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="93" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="87" HorizontalAxisID="86" PreferedID="85" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="35" DataPoints="180" ElementName="24HrChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="90" GlobalDataSource="True" PlotID="89" GraphStyle="Line" PlotColor="#FFFF0000" />
+                  <GuiGraphDataPlot DataSourceID="101" GlobalDataSource="True" PlotID="107" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="TGraph_1WK">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="91" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="92" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="93" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week" ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1WkBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="94" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="TGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\green thermometer.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="93" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="97" HorizontalAxisID="96" PreferedID="95" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="35" DataPoints="180" ElementName="1WkChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="100" GlobalDataSource="True" PlotID="99" GraphStyle="Line" PlotColor="#FFFF0000" />
+                  <GuiGraphDataPlot DataSourceID="102" GlobalDataSource="True" PlotID="106" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="LiveHGraph">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="41" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="42" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="43" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="44" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="WeekBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\blue moisture.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="97" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="47" HorizontalAxisID="46" PreferedID="45" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="100" DataPoints="30" ElementName="HLive" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="50" GlobalDataSource="False" PlotID="49" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="HGraph_1HR">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="51" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="52" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="53" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="54" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="WeekBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\blue moisture.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="97" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="57" HorizontalAxisID="56" PreferedID="55" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="100" DataPoints="180" ElementName="1HrChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="60" GlobalDataSource="True" PlotID="59" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="HGraph_24HR">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="25" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="26" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="27" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="29" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="WeekBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\blue moisture.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="97" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="35" HorizontalAxisID="34" PreferedID="30" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="100" DataPoints="180" ElementName="24HrChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="40" GlobalDataSource="True" PlotID="39" GraphStyle="Line" PlotColor="#FFDC143C" />
+                  <GuiGraphDataPlot DataSourceID="103" GlobalDataSource="True" PlotID="105" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="HGraph_1WK">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="61" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="62" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="1 hr" ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="1HrBtn" Theme="Flat" Top="194" Left="127" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="63" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="24 hr " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="24HrBtn" Theme="Flat" Top="194" Left="187" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_24HR" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="64" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="Week " ButtonTextSize="8" TextColour="#FFF02E2C" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="WeekBtn" Theme="Flat" Top="194" Left="245" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <NavigateToScreen SelectedValue="HGraph_1WK" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiImage DeviceRender="False" ImageString="Images\blue moisture.png" ImageStretch="Uniform" ImageHorizontalAlignment="Center" ImageVerticalAlignment="Center" ImageOpacity="1" PreferedImageID="-1" ElementName="Image_1" Theme="{assembly:Null}" Top="32" Left="97" ZOrder="0" Width="175" Height="113" />
+            <GuiGraph AutoUpdateOnDataChange="True" VerticalAxisWidth="50" HorizontalAxisHeight="20" VerticalAxisID="67" HorizontalAxisID="66" PreferedID="65" BackgroundColor="#801C1A1A" MinValue="15" MaxValue="100" DataPoints="180" ElementName="1WkChart" Theme="(Project Default)" Top="29" Left="40" ZOrder="0" Width="240" Height="140">
+              <GuiGraph.DataPlots>
+                <PlotCollection>
+                  <GuiGraphDataPlot DataSourceID="70" GlobalDataSource="True" PlotID="69" GraphStyle="Line" PlotColor="#FFDC143C" />
+                  <GuiGraphDataPlot DataSourceID="104" GlobalDataSource="True" PlotID="108" GraphStyle="Line" PlotColor="#FF0000FF" />
+                </PlotCollection>
+              </GuiGraph.DataPlots>
+            </GuiGraph>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="LoadDataPrompt">
+        <Screen.OnPreLoadAction>
+          <ScriptActionEditor TextValue="Scripts\traces.txt" />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiGradient Offset="2" GradientType="Linear" StartColor="#FFEEF0F2" EndColor="#FF5D5D5D" ElementName="Gradient_1" Theme="{assembly:Null}" Top="-2" Left="1" ZOrder="0" Width="320" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_2" Theme="{assembly:Null}" Top="221" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_3" Theme="{assembly:Null}" Top="0" Left="0" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_4" Theme="{assembly:Null}" Top="0" Left="300" ZOrder="0" Width="20" Height="240" />
+            <GuiBox DeviceOnly="False" ConstrainWidthToHeight="False" CornerSize="0" BorderColour="#FF5C5A5A" BackgroundColour="#FF5C5A5A" LockWidthHeight="False" ElementName="Rectangle_1" Theme="{assembly:Null}" Top="-1" Left="0" ZOrder="0" Width="320" Height="20" />
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="False" ButtonFontString="Fonts\libre-caslon-text\LibreCaslonText-Regular.ttf" PreferedRegionID="115" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="0" BorderSize="2" Text="HOME " ButtonTextSize="8" TextColour="#FF5C5A5A" ButtonColour="#00FFFFFF" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="HomeBtn" Theme="Flat" Top="194" Left="23" ZOrder="0" Width="50" Height="24">
+              <GuiButton25.OnUpAction>
+                <GTTActionList />
+              </GuiButton25.OnUpAction>
+              <GuiButton25.OnDownAction>
+                <ScriptActionEditor TextValue="Scripts\traces.txt" />
+                <NavigateToScreen SelectedValue="Screen1" />
+              </GuiButton25.OnDownAction>
+              <GuiButton25.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton25.ActionScriptUp>
+              <GuiButton25.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton25.ActionScriptDown>
+            </GuiButton25>
+            <GuiAdvancedLabel PreferedLabelID="109" LabelText="There is old data logged" LabelFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" LabelSize="10" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="False" CachedCharacters="" ElementName="Static_Text_1" Theme="{assembly:Null}" Top="29" Left="37" ZOrder="0" Width="240" Height="64" />
+            <GuiAdvancedLabel PreferedLabelID="110" LabelText="would you like to load old data?" LabelFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" LabelSize="10" LabelRotation="0" LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" LabelColour="#FF000000" LabelBackgroundColour="#00FFFFFF" DynamicText="False" BlankLabel="False" CachedCharacters="" ElementName="Static_Text_2" Theme="{assembly:Null}" Top="60" Left="41" ZOrder="0" Width="240" Height="64" />
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+    </ScreenCollection>
+  </GTTProject.Screens>
+  <GTTProject.GlobalBarGraphs>
+    <BarGraphSlotCollection />
+  </GTTProject.GlobalBarGraphs>
+</GTTProject>
