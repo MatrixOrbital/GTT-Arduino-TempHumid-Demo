@@ -30,10 +30,10 @@
 #define I2C_Address 0x28  //Define default 8bit I2C address of 0x50 >> 1 for 7bit Arduino
 
 // Buffer for incoming data
-uint8_t rx_buffer[128];
+uint8_t rx_buffer[128]; 
 
 // Buffer for outgoing data
-uint8_t tx_buffer[256];
+uint8_t tx_buffer[128]; 
 
 gtt_device gtt; //Declare the GTT device
 
@@ -51,50 +51,27 @@ byte defaultMaxHumidity;
 bool MaxHumidityScreen = false; 
 GraphScreen Graph = NOGraph;
 
-typedef struct
-{
-  byte ChartData;
-  byte ChartObject;
-  float rawData;
-}DataSourceType;
-
-DataSourceType Temperature;
-DataSourceType Humidity;
-
 void LiveGraph(float temperature, float humidity)
 {
   if (Graph == NOGraph)
-    return;
-    
-  DataSourceType source;
+    return;    
   
-  if (Graph == TempGraph)
-  {
-    source = Temperature;  
-    source.rawData = temperature;    
-    source.ChartData = id_livetgraph_t_live_data0;
-    source.ChartObject = id_livetgraph_t_live_;    
-  }
-  else 
-  {
-    source = Humidity;  
-    source.rawData = humidity;    
-    source.ChartData = id_livehgraph_h_live_data0;
-    source.ChartObject = id_livehgraph_h_live_;    
-  }
-  
-  gtt25_dataset_push_data(&gtt, source.ChartData, (float) source.rawData); 
-  gtt25_visualobject_invalidate(&gtt, source.ChartObject); 
   Serial.println("drawing LIVE graph");
+
+  if (Graph == TempGraph)
+    gtt_live_t_graph_t_live_data0_push_data(&gtt, temperature);
+  else 
+    gtt_live_h_graph_h_live_data0_push_data(&gtt, humidity);
+
   return;
 }
 
 void GTT25ButtonHandler(gtt_device* device, uint16_t ObjectID, uint8_t State)
 {     
-  Serial.print("button handler: ");          
-  Serial.print(ObjectID);        
-  Serial.print(" state: ");          
-  Serial.println(State);        
+  //Serial.print("button handler: ");          
+  //Serial.print(ObjectID);        
+  //Serial.print(" state: ");          
+  //Serial.println(State);        
   
   if (State != 1)
     return;
@@ -128,7 +105,7 @@ void GTT25ButtonHandler(gtt_device* device, uint16_t ObjectID, uint8_t State)
     case id_hgraph_24hr_home_btn:
     case id_hgraph_1wk_home_btn:
     case id_livetgraph_home_btn:   
-      Serial.println("==== back to HOME screen");                
+      //Serial.println("==== back to HOME screen");                
       return;
       break;   
     case id_livetgraph_1_hr_btn:
@@ -139,7 +116,7 @@ void GTT25ButtonHandler(gtt_device* device, uint16_t ObjectID, uint8_t State)
     case id_hgraph_1hr_1_hr_btn:   
     case id_hgraph_24hr_1_hr_btn:
     case id_hgraph_1wk_1_hr_btn:   
-      Serial.println("==== displaying 1 HOUR");     
+      //Serial.println("==== displaying 1 HOUR");     
       return;
       break;
     case id_livetgraph_24_hr_btn:
@@ -150,7 +127,7 @@ void GTT25ButtonHandler(gtt_device* device, uint16_t ObjectID, uint8_t State)
     case id_hgraph_1hr_24_hr_btn:   
     case id_hgraph_24hr_24_hr_btn:
     case id_hgraph_1wk_24_hr_btn:           
-      Serial.println("==== displaying 24 HOUR");       
+      //Serial.println("==== displaying 24 HOUR");       
       return;
       break;
     case id_livetgraph_1_wk_btn:
@@ -161,25 +138,25 @@ void GTT25ButtonHandler(gtt_device* device, uint16_t ObjectID, uint8_t State)
     case id_hgraph_1hr_week_btn:
     case id_hgraph_24hr_week_btn:    
     case id_hgraph_1wk_week_btn:     
-      Serial.println("==== displaying 1 WEEK");  
+      //Serial.println("==== displaying 1 WEEK");  
       return;
       break;
   }  
   
-  char buf[] = {0};
+  char buf[6] = {0};
   int16_t humid = defaultMaxHumidity;  
   sprintf(buf, "%d", humid); //Convert the humidity value to a string  
   gtt_set_screen2_humi_label_1_text(&gtt, gtt_make_text_ascii(buf)); //Update the GTT label    
-  Serial.println("defaultMaxHumidity is set");
-  Serial.println(humid);
+  //Serial.println("defaultMaxHumidity is set");
+  //Serial.println(humid);
 }
 
 void HumidityCheck(float humidityVal)
 {
   if (humidityVal > defaultMaxHumidity)
   {
-    Serial.print("max: "); Serial.print((int)defaultMaxHumidity); 
-    Serial.print(" current:"); Serial.println((int)humidityVal); 
+    //Serial.print("max: "); Serial.print((int)defaultMaxHumidity); 
+    //Serial.print(" current:"); Serial.println((int)humidityVal); 
     if (MaxHumidityScreen == false)
     {
       gtt_run_script(&gtt, (char*)("GTTProject12\\Screen3\\Screen3.bin"));
@@ -189,8 +166,7 @@ void HumidityCheck(float humidityVal)
   }
 
   if (MaxHumidityScreen == true &&  (humidityVal < defaultMaxHumidity))
-  {
-      gtt_clear_alltraces(&gtt);
+  {      
       gtt_run_script(&gtt, (char*)("GTTProject12\\Screen1\\Screen1.bin"));      
       MaxHumidityScreen = false;        
       delay(2000);    
@@ -209,7 +185,7 @@ void UpdateDataCollection(float temperature, float humidity)
       static byte counter20sec = 0; // 180 data points = 1hr
       static byte counter8mins = 0; // 180 data points = 24hrs
       static byte counter56mins = 0;// 180 data points = 1week
-      DataSourceType dataSource;
+      //DataSourceType dataSource;
       static byte HrMaxH = 15;
       static byte HrMinH = 25;
       static byte HrMaxT = 20;
@@ -255,7 +231,7 @@ void UpdateDataCollection(float temperature, float humidity)
       //Serial.print(" humidity: ");  
       //Serial.print(humidity);        
 
-      Serial.print("  20 sec counter: ");  
+      Serial.print("  2 sec counter: ");  
       Serial.println(counter20sec);              
       counter20sec++;
       if (counter20sec < 10) // 10x 2sec refresh rate = 20 seconds
@@ -293,21 +269,13 @@ void UpdateDataCollection(float temperature, float humidity)
       counter8mins++;
       
       // update 1hr graph
-      Temperature.ChartData = id_tgraph_1hr_1_hr_chart_data0;
-      Temperature.ChartObject = id_tgraph_1hr_1_hr_chart_;
-      dataSource = Temperature;      
-      gtt25_dataset_push_data(&gtt, dataSource.ChartData, avgTempData); 
+      gtt_t_graph_1_h_r_1_hr_chart_data0_push_data(&gtt, avgTempData);            
       if ((byte)temperature > HrMaxT)
         HrMaxT = (byte)temperature;
       if ((byte)temperature < HrMinT)
         HrMinT = (byte)temperature;
 
-
-      Humidity.ChartData = id_hgraph_1hr_1_hr_chart_data0;
-      Humidity.ChartObject = id_hgraph_1hr_1_hr_chart_;
-      dataSource = Humidity;      
-      gtt25_dataset_push_data(&gtt, dataSource.ChartData, avgHumiData); 
-        
+      gtt_h_graph_1_h_r_1_hr_chart_data0_push_data(&gtt, avgHumiData);            
       if ((byte)humidity > HrMaxH)
         HrMaxH = (byte)humidity;
       if ((byte)humidity < HrMinH)
@@ -315,16 +283,17 @@ void UpdateDataCollection(float temperature, float humidity)
       
       if (counter8mins > 23) // <-- 23
       {
-        Serial.print("Data collection: 24hr data points: ");      
-        Serial.print(count8minP);  
-        Serial.print(" ");      
+        //Serial.print("Data collection: 24hr data points: ");      
+        //Serial.print(count8minP);  
+        //Serial.print(" ");      
         count8minP++;
         counter8mins = 0;
         counter56mins++;
 
         // update 24hr graph, 2 plots, temp min and max
-        gtt25_dataset_push_data(&gtt, id_tgraph_24hr_24_hr_chart_data0, HrMaxT); 
-        gtt25_dataset_push_data(&gtt, id_tgraph_24hr_24_hr_chart_data1, HrMinT); 
+        gtt_t_graph_24_h_r_24_hr_chart_data0_push_data(&gtt, HrMaxT);
+        gtt_t_graph_24_h_r_24_hr_chart_data1_push_data(&gtt, HrMinT);
+        
         r = gtt25_dataset_save(&gtt, id_tgraph_24hr_24_hr_chart_data0, gtt_make_text_ascii("Temp24hrMax.dat"));  
         r = gtt25_dataset_save(&gtt, id_tgraph_24hr_24_hr_chart_data1, gtt_make_text_ascii("Temp24hrMin.dat"));  
 
@@ -334,8 +303,9 @@ void UpdateDataCollection(float temperature, float humidity)
           T24HrMinT = (byte)temperature;
 
         // update 24hr graph, 2 plots, humidity min and max
-        gtt25_dataset_push_data(&gtt, id_hgraph_24hr_24_hr_chart_data0, HrMaxH);
-        gtt25_dataset_push_data(&gtt, id_hgraph_24hr_24_hr_chart_data1, HrMinH);         
+        gtt_h_graph_24_h_r_24_hr_chart_data0_push_data(&gtt, HrMaxH);
+        gtt_h_graph_24_h_r_24_hr_chart_data1_push_data(&gtt, HrMinH);
+               
         r = gtt25_dataset_save(&gtt, id_hgraph_24hr_24_hr_chart_data0, gtt_make_text_ascii("Humidity24hrMax.dat"));        
         r = gtt25_dataset_save(&gtt, id_hgraph_24hr_24_hr_chart_data1, gtt_make_text_ascii("Humidity24hrMin.dat"));        
 
@@ -346,25 +316,25 @@ void UpdateDataCollection(float temperature, float humidity)
         
         if (counter56mins > 6) //<-- 6
         {          
-          Serial.print("Data collection: 1wk data points: ");      
-          Serial.print(count56minP); 
-          Serial.print(" ");      
+          //Serial.print("Data collection: 1wk data points: ");      
+          //Serial.print(count56minP); 
+          //Serial.print(" ");      
           count56minP++;
           counter56mins = 0;
 
           // update Week graph
-          gtt25_dataset_push_data(&gtt, id_tgraph_1wk_1_wk_chart_data0, T24HrMaxT); 
-          gtt25_dataset_push_data(&gtt, id_tgraph_1wk_1_wk_chart_data1, T24HrMinT); 
+          gtt_t_graph_1_w_k_1_wk_chart_data0_push_data(&gtt, T24HrMaxT);
+          gtt_t_graph_1_w_k_1_wk_chart_data1_push_data(&gtt, T24HrMinT);
           gtt25_dataset_save(&gtt, id_tgraph_1wk_1_wk_chart_data0, gtt_make_text_ascii("Temp1WkMax.dat")); //< change file names      
           gtt25_dataset_save(&gtt, id_tgraph_1wk_1_wk_chart_data1, gtt_make_text_ascii("Temp1WkMin.dat")); //< change file names       
           
-          gtt25_dataset_push_data(&gtt, id_hgraph_1wk_1_wk_chart_data0, T24HrMaxH); 
-          gtt25_dataset_push_data(&gtt, id_hgraph_1wk_1_wk_chart_data1, T24HrMinH); 
+          gtt_h_graph_1_w_k_1_wk_chart_data0_push_data(&gtt, T24HrMaxH);
+          gtt_h_graph_1_w_k_1_wk_chart_data1_push_data(&gtt, T24HrMinH);          
           gtt25_dataset_save(&gtt, id_hgraph_1wk_1_wk_chart_data0, gtt_make_text_ascii("Humidity1WkMax.dat"));//< change file names                  
           gtt25_dataset_save(&gtt, id_hgraph_1wk_1_wk_chart_data1, gtt_make_text_ascii("Humidity1WkMin.dat"));//< change file names                  
         }
       }  
-      Serial.println(" ");                
+      //Serial.println(" ");                
       //debug
       count20secP %= 180;
       count8minP %= 180;
@@ -397,7 +367,7 @@ byte ReadSensor(float*  temperature, float* humidity)
 {    
     int err = SimpleDHTErrSuccess;
     if ((err = dht22.read2(pinDHT22, temperature, humidity, NULL)) != SimpleDHTErrSuccess) {
-      Serial.print("Read DHT22 failed, err="); Serial.println(err);delay(2000);
+      //Serial.print("Read DHT22 failed, err="); Serial.println(err);delay(2000);
       return 0;
     }    
     return 1;
@@ -433,7 +403,7 @@ void loop() {
   byte collectionRate = 2; // 30
   count++;
  
-  if (count > 2500) // cycle delay for DHT, refresh is 0.5HZ (2 seconds)
+  if (count > 2100) // cycle delay for DHT, refresh is 0.5HZ (2 seconds)
   {
     count = 0;
     dataColCount++;
@@ -493,4 +463,3 @@ byte i2cRead(gtt_device* gtt_device) { //Wait for one byte to be read over i2c
     return data;
   }
 }
-
