@@ -1110,6 +1110,14 @@ eStatusCode gtt_set_live_t_graph_1_hr_btn_foreground_b(gtt_device* device, uint8
 {
 	return gtt25_baseobject_set_property_u8(device, id_livetgraph_1_hr_btn, ePropertyID_Button_ForegroundB, value);
 }
+eStatusCode gtt_live_t_graph_t_live_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_livetgraph_t_live_data0, Value);
+}
+eStatusCode gtt_live_t_graph_t_live_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_livetgraph_t_live_data0, Index, Value);
+}
 
 eStatusCode gtt_get_t_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text *value)
 {
@@ -1254,6 +1262,14 @@ eStatusCode gtt_get_t_graph_1_h_r_1_hr_btn_foreground_b(gtt_device* device, uint
 eStatusCode gtt_set_t_graph_1_h_r_1_hr_btn_foreground_b(gtt_device* device, uint8_t value)
 {
 	return gtt25_baseobject_set_property_u8(device, id_tgraph_1hr_1_hr_btn, ePropertyID_Button_ForegroundB, value);
+}
+eStatusCode gtt_t_graph_1_h_r_1_hr_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_tgraph_1hr_1_hr_chart_data0, Value);
+}
+eStatusCode gtt_t_graph_1_h_r_1_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_tgraph_1hr_1_hr_chart_data0, Index, Value);
 }
 
 eStatusCode gtt_get_t_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text *value)
@@ -1400,6 +1416,22 @@ eStatusCode gtt_set_t_graph_24_h_r_1_hr_btn_foreground_b(gtt_device* device, uin
 {
 	return gtt25_baseobject_set_property_u8(device, id_tgraph_24hr_1_hr_btn, ePropertyID_Button_ForegroundB, value);
 }
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_tgraph_24hr_24_hr_chart_data0, Value);
+}
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_tgraph_24hr_24_hr_chart_data0, Index, Value);
+}
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data1_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_tgraph_24hr_24_hr_chart_data1, Value);
+}
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_tgraph_24hr_24_hr_chart_data1, Index, Value);
+}
 
 eStatusCode gtt_get_t_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text *value)
 {
@@ -1544,6 +1576,22 @@ eStatusCode gtt_get_t_graph_1_w_k_1_hr_btn_foreground_b(gtt_device* device, uint
 eStatusCode gtt_set_t_graph_1_w_k_1_hr_btn_foreground_b(gtt_device* device, uint8_t value)
 {
 	return gtt25_baseobject_set_property_u8(device, id_tgraph_1wk_1_hr_btn, ePropertyID_Button_ForegroundB, value);
+}
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_tgraph_1wk_1_wk_chart_data0, Value);
+}
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_tgraph_1wk_1_wk_chart_data0, Index, Value);
+}
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data1_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_tgraph_1wk_1_wk_chart_data1, Value);
+}
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_tgraph_1wk_1_wk_chart_data1, Index, Value);
 }
 
 eStatusCode gtt_get_live_h_graph_home_btn_text(gtt_device* device, gtt_text *value)
@@ -1690,6 +1738,14 @@ eStatusCode gtt_set_live_h_graph_week_btn_foreground_b(gtt_device* device, uint8
 {
 	return gtt25_baseobject_set_property_u8(device, id_livehgraph_week_btn, ePropertyID_Button_ForegroundB, value);
 }
+eStatusCode gtt_live_h_graph_h_live_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_livehgraph_h_live_data0, Value);
+}
+eStatusCode gtt_live_h_graph_h_live_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_livehgraph_h_live_data0, Index, Value);
+}
 
 eStatusCode gtt_get_h_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text *value)
 {
@@ -1834,6 +1890,14 @@ eStatusCode gtt_get_h_graph_1_h_r_week_btn_foreground_b(gtt_device* device, uint
 eStatusCode gtt_set_h_graph_1_h_r_week_btn_foreground_b(gtt_device* device, uint8_t value)
 {
 	return gtt25_baseobject_set_property_u8(device, id_hgraph_1hr_week_btn, ePropertyID_Button_ForegroundB, value);
+}
+eStatusCode gtt_h_graph_1_h_r_1_hr_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_hgraph_1hr_1_hr_chart_data0, Value);
+}
+eStatusCode gtt_h_graph_1_h_r_1_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_hgraph_1hr_1_hr_chart_data0, Index, Value);
 }
 
 eStatusCode gtt_get_h_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text *value)
@@ -1980,6 +2044,22 @@ eStatusCode gtt_set_h_graph_24_h_r_week_btn_foreground_b(gtt_device* device, uin
 {
 	return gtt25_baseobject_set_property_u8(device, id_hgraph_24hr_week_btn, ePropertyID_Button_ForegroundB, value);
 }
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_hgraph_24hr_24_hr_chart_data0, Value);
+}
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_hgraph_24hr_24_hr_chart_data0, Index, Value);
+}
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data1_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_hgraph_24hr_24_hr_chart_data1, Value);
+}
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_hgraph_24hr_24_hr_chart_data1, Index, Value);
+}
 
 eStatusCode gtt_get_h_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text *value)
 {
@@ -2124,6 +2204,22 @@ eStatusCode gtt_get_h_graph_1_w_k_week_btn_foreground_b(gtt_device* device, uint
 eStatusCode gtt_set_h_graph_1_w_k_week_btn_foreground_b(gtt_device* device, uint8_t value)
 {
 	return gtt25_baseobject_set_property_u8(device, id_hgraph_1wk_week_btn, ePropertyID_Button_ForegroundB, value);
+}
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data0_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_hgraph_1wk_1_wk_chart_data0, Value);
+}
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_hgraph_1wk_1_wk_chart_data0, Index, Value);
+}
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data1_push_data(gtt_device* device, float Value)
+{
+	return gtt25_dataset_push_data(device, id_hgraph_1wk_1_wk_chart_data1, Value);
+}
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value)
+{
+	return gtt25_dataset_set_data(device, id_hgraph_1wk_1_wk_chart_data1, Index, Value);
 }
 
 eStatusCode gtt_get_load_data_prompt_static_text_1_text(gtt_device* device, gtt_text *value)
@@ -2288,4 +2384,3 @@ eStatusCode gtt_set_load_data_prompt_home_btn_foreground_b(gtt_device* device, u
 {
 	return gtt25_baseobject_set_property_u8(device, id_loaddataprompt_home_btn, ePropertyID_Button_ForegroundB, value);
 }
-
