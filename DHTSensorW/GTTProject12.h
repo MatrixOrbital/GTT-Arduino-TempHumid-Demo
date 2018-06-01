@@ -34,7 +34,7 @@
 #define id_livetgraph_24_hr_btn 72
 #define id_livetgraph_1_wk_btn 73
 #define id_livetgraph_1_hr_btn 74
-#define id_livetgraph_t_live_ 75
+#define id_livetgraph_t_live 75
 #define id_livetgraph_t_live_horizontal_axis 76
 #define id_livetgraph_t_live_vertical_axis 77
 #define id_livetgraph_t_live_plots 33
@@ -46,7 +46,7 @@
 #define id_tgraph_1hr_24_hr_btn 21
 #define id_tgraph_1hr_1_wk_btn 23
 #define id_tgraph_1hr_1_hr_btn 24
-#define id_tgraph_1hr_1_hr_chart_ 28
+#define id_tgraph_1hr_1_hr_chart 28
 #define id_tgraph_1hr_1_hr_chart_horizontal_axis 31
 #define id_tgraph_1hr_1_hr_chart_vertical_axis 32
 #define id_tgraph_1hr_1_hr_chart_plots 38
@@ -58,7 +58,7 @@
 #define id_tgraph_24hr_24_hr_btn 82
 #define id_tgraph_24hr_1_wk_btn 83
 #define id_tgraph_24hr_1_hr_btn 84
-#define id_tgraph_24hr_24_hr_chart_ 85
+#define id_tgraph_24hr_24_hr_chart 85
 #define id_tgraph_24hr_24_hr_chart_horizontal_axis 86
 #define id_tgraph_24hr_24_hr_chart_vertical_axis 87
 #define id_tgraph_24hr_24_hr_chart_plots 48
@@ -72,7 +72,7 @@
 #define id_tgraph_1wk_24_hr_btn 92
 #define id_tgraph_1wk_1_wk_btn 93
 #define id_tgraph_1wk_1_hr_btn 94
-#define id_tgraph_1wk_1_wk_chart_ 95
+#define id_tgraph_1wk_1_wk_chart 95
 #define id_tgraph_1wk_1_wk_chart_horizontal_axis 96
 #define id_tgraph_1wk_1_wk_chart_vertical_axis 97
 #define id_tgraph_1wk_1_wk_chart_plots 58
@@ -86,7 +86,7 @@
 #define id_livehgraph_1_hr_btn 42
 #define id_livehgraph_24_hr_btn 43
 #define id_livehgraph_week_btn 44
-#define id_livehgraph_h_live_ 45
+#define id_livehgraph_h_live 45
 #define id_livehgraph_h_live_horizontal_axis 46
 #define id_livehgraph_h_live_vertical_axis 47
 #define id_livehgraph_h_live_plots 68
@@ -98,7 +98,7 @@
 #define id_hgraph_1hr_1_hr_btn 52
 #define id_hgraph_1hr_24_hr_btn 53
 #define id_hgraph_1hr_week_btn 54
-#define id_hgraph_1hr_1_hr_chart_ 55
+#define id_hgraph_1hr_1_hr_chart 55
 #define id_hgraph_1hr_1_hr_chart_horizontal_axis 56
 #define id_hgraph_1hr_1_hr_chart_vertical_axis 57
 #define id_hgraph_1hr_1_hr_chart_plots 78
@@ -110,7 +110,7 @@
 #define id_hgraph_24hr_1_hr_btn 26
 #define id_hgraph_24hr_24_hr_btn 27
 #define id_hgraph_24hr_week_btn 29
-#define id_hgraph_24hr_24_hr_chart_ 30
+#define id_hgraph_24hr_24_hr_chart 30
 #define id_hgraph_24hr_24_hr_chart_horizontal_axis 34
 #define id_hgraph_24hr_24_hr_chart_vertical_axis 35
 #define id_hgraph_24hr_24_hr_chart_plots 88
@@ -124,7 +124,7 @@
 #define id_hgraph_1wk_1_hr_btn 62
 #define id_hgraph_1wk_24_hr_btn 63
 #define id_hgraph_1wk_week_btn 64
-#define id_hgraph_1wk_1_wk_chart_ 65
+#define id_hgraph_1wk_1_wk_chart 65
 #define id_hgraph_1wk_1_wk_chart_horizontal_axis 66
 #define id_hgraph_1wk_1_wk_chart_vertical_axis 67
 #define id_hgraph_1wk_1_wk_chart_plots 98
@@ -388,6 +388,8 @@ eStatusCode gtt_get_live_t_graph_1_hr_btn_foreground_g(gtt_device* device, uint8
 eStatusCode gtt_set_live_t_graph_1_hr_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_live_t_graph_1_hr_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_live_t_graph_1_hr_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_live_t_graph_t_live_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_live_t_graph_t_live_data0_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_t_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_t_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text  value);
@@ -421,6 +423,8 @@ eStatusCode gtt_get_t_graph_1_h_r_1_hr_btn_foreground_g(gtt_device* device, uint
 eStatusCode gtt_set_t_graph_1_h_r_1_hr_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_t_graph_1_h_r_1_hr_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_t_graph_1_h_r_1_hr_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_t_graph_1_h_r_1_hr_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_t_graph_1_h_r_1_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_t_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_t_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text  value);
@@ -454,6 +458,10 @@ eStatusCode gtt_get_t_graph_24_h_r_1_hr_btn_foreground_g(gtt_device* device, uin
 eStatusCode gtt_set_t_graph_24_h_r_1_hr_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_t_graph_24_h_r_1_hr_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_t_graph_24_h_r_1_hr_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data1_push_data(gtt_device* device, float Value);
+eStatusCode gtt_t_graph_24_h_r_24_hr_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_t_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_t_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text  value);
@@ -487,6 +495,10 @@ eStatusCode gtt_get_t_graph_1_w_k_1_hr_btn_foreground_g(gtt_device* device, uint
 eStatusCode gtt_set_t_graph_1_w_k_1_hr_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_t_graph_1_w_k_1_hr_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_t_graph_1_w_k_1_hr_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data1_push_data(gtt_device* device, float Value);
+eStatusCode gtt_t_graph_1_w_k_1_wk_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_live_h_graph_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_live_h_graph_home_btn_text(gtt_device* device, gtt_text  value);
@@ -520,6 +532,8 @@ eStatusCode gtt_get_live_h_graph_week_btn_foreground_g(gtt_device* device, uint8
 eStatusCode gtt_set_live_h_graph_week_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_live_h_graph_week_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_live_h_graph_week_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_live_h_graph_h_live_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_live_h_graph_h_live_data0_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_h_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_h_graph_1_h_r_home_btn_text(gtt_device* device, gtt_text  value);
@@ -553,6 +567,8 @@ eStatusCode gtt_get_h_graph_1_h_r_week_btn_foreground_g(gtt_device* device, uint
 eStatusCode gtt_set_h_graph_1_h_r_week_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_h_graph_1_h_r_week_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_h_graph_1_h_r_week_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_h_graph_1_h_r_1_hr_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_h_graph_1_h_r_1_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_h_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_h_graph_24_h_r_home_btn_text(gtt_device* device, gtt_text  value);
@@ -586,6 +602,10 @@ eStatusCode gtt_get_h_graph_24_h_r_week_btn_foreground_g(gtt_device* device, uin
 eStatusCode gtt_set_h_graph_24_h_r_week_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_h_graph_24_h_r_week_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_h_graph_24_h_r_week_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data1_push_data(gtt_device* device, float Value);
+eStatusCode gtt_h_graph_24_h_r_24_hr_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_h_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_h_graph_1_w_k_home_btn_text(gtt_device* device, gtt_text  value);
@@ -619,6 +639,10 @@ eStatusCode gtt_get_h_graph_1_w_k_week_btn_foreground_g(gtt_device* device, uint
 eStatusCode gtt_set_h_graph_1_w_k_week_btn_foreground_g(gtt_device* device, uint8_t value);
 eStatusCode gtt_get_h_graph_1_w_k_week_btn_foreground_b(gtt_device* device, uint8_t *value);
 eStatusCode gtt_set_h_graph_1_w_k_week_btn_foreground_b(gtt_device* device, uint8_t value);
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data0_push_data(gtt_device* device, float Value);
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data0_set_data(gtt_device* device, uint16_t Index, float Value);
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data1_push_data(gtt_device* device, float Value);
+eStatusCode gtt_h_graph_1_w_k_1_wk_chart_data1_set_data(gtt_device* device, uint16_t Index, float Value);
 
 eStatusCode gtt_get_load_data_prompt_static_text_1_text(gtt_device* device, gtt_text  *value);
 eStatusCode gtt_set_load_data_prompt_static_text_1_text(gtt_device* device, gtt_text  value);
